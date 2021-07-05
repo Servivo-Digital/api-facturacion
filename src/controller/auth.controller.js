@@ -2,6 +2,7 @@ import User from '../models/User'
 
 
 export const signUp = async(req,res) =>{
+    
     res.json('signUp')
 }
 
