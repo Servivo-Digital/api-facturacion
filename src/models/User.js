@@ -29,16 +29,18 @@ const userSchema = new Schema(
 );
 
 
-userSchema.static.encryptPassword = async(password) =>{
+userSchema.statics.encryptPassword = async (password) =>{
 
-  const salt = bcrypt.genSalt(10)
-  return await bcrypt.hash(password,salt)
-
+  //const salt = bcrypt.genSalt(10)
+  let salt = bcrypt.genSaltSync(10);
+  const passwordEncrpt = await bcrypt.hash(password,salt)
+  return passwordEncrpt
+  
 }
-userSchema.static.comparePassword = async(password, receivedPassword) =>{
+userSchema.statics.comparePassword = async(password, receivedPassword) =>{
 
   return await bcrypt.compare(password, receivedPassword)
 
 }
 
-export default model("User", userSchema);
+export default model('User',userSchema);
