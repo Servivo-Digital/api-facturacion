@@ -35,6 +35,18 @@ export const signUp = async (req, res) => {
   res.status(200).json({ token });
 };
 
+
+
 export const signIn = async (req, res) => {
-  res.json("signIn");
+
+    const {email,password} = req.body
+
+    const userFound = User.findOne({ email });
+
+    if(!userFound) return res.status(400).json("User not found")
+
+    console.log(userFound)
+    res.json('hey')
+    
+
 };
