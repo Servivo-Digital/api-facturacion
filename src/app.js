@@ -1,7 +1,8 @@
 import  express  from 'express';
 import morgan from 'morgan';
-import cfdiRoutes from './routes/cfdi.routes'
 import info from '../package.json'
+import cfdiRoutes from './routes/cfdi.routes'
+import authRoutes from './routes/auth.routes'
 
 const app = express()
 app.use(morgan('dev'))
@@ -26,5 +27,8 @@ app.use('/api',cfdiRoutes)
 //USER ROUTES
 
 //AUTH ROUTES
+app.use('/api',authRoutes)
+
+
 
 export default app
