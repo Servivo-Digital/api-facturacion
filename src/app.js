@@ -1,36 +1,33 @@
-import  express  from 'express';
-import morgan from 'morgan';
-import info from '../package.json'
-import cfdiRoutes from './routes/cfdi.routes'
-import authRoutes from './routes/auth.routes'
+import express from "express";
+import morgan from "morgan";
+import info from "../package.json";
+import cfdiRoutes from "./routes/cfdi.routes";
+import authRoutes from "./routes/auth.routes";
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use(morgan('dev'))
+app.use(express.json());
+app.use(morgan("dev"));
 
-app.set('info',info)
-
+app.set("info", info);
 
 //routes
 
 //home
-app.get('/',(req,res)=>{
-    res.json({
-        name: info.name,
-        author: info.author,
-        description : info.description,
-        version: info.version
-    })
-})
+app.get("/", (req, res) => {
+  res.json({
+    name: info.name,
+    author: info.author,
+    description: info.description,
+    version: info.version,
+  });
+});
 
 //CFDI ROUTES
-app.use('/api',cfdiRoutes)
+app.use("/api", cfdiRoutes);
 //USER ROUTES
 
 //AUTH ROUTES
-app.use('/api/auth',authRoutes)
+app.use("/api/auth", authRoutes);
 
-
-
-export default app
+export default app;
