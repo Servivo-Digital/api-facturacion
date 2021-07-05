@@ -3,8 +3,11 @@ import morgan from "morgan";
 import info from "../package.json";
 import cfdiRoutes from "./routes/cfdi.routes";
 import authRoutes from "./routes/auth.routes";
+import {createRoles} from './libs/initialSetup'
 
 const app = express();
+createRoles()
+
 
 app.use(express.json());
 app.use(morgan("dev"));
