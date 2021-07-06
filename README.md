@@ -15,8 +15,6 @@
 <br>
 <br>
 
-## Api-facturación
-
 ######  Consejo rápido:‎‎ Utilice la función "buscar en la página" de su navegador para buscar tipos de recursos específicos ( o ).‎ `Ctrl+F `   `Cmd+F`
 ‎
 
@@ -57,7 +55,7 @@ Api-facturacion es de su uso interno.Debido a esto, pedimos a todos los desarrol
 ## **Autenticación.**
 
 
-## SignUp 
+## :closed_lock_with_key: SignUp 
 
 <br>
 
@@ -65,11 +63,11 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 
 <br>
 
-- ### **Peticion.** 
+- ### :globe_with_meridians: **Peticion.** 
 
     <br>
 
-    -   ### EndPoint.
+    -   ### :link: EndPoint.
 
         Para poder crear un cuenta y obtener un `JSONWebToken` debemos enviar un peticion `POST` al siguiente ENDPOINT:
 
@@ -84,7 +82,7 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
         ```
         <br>
 
-    -   ### Objeto.
+    -   ### :white_small_square: Objeto.
         
          Con un objeto con la siguiente estructura: 
          
@@ -103,7 +101,7 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 
         <br>
 
-        ### Detalle de los argumentos 
+        ### :page_facing_up: Detalle de los argumentos 
         | Nombre | Tipo   | Descripción |
         |:-----  |:--------:|:------|
         | username  | `String` | El nombre del usuario |
@@ -113,8 +111,8 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 
         <br>
 
-- ### **Resultado.**
-    -  ### Registro Exitoso.
+- ### :key: **Resultado.**
+    -  ### :white_check_mark: Registro Exitoso.
     Si tu registro fue exito, el servidor te regresara un token con esta forma
 
     <br>
@@ -127,7 +125,7 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 
     <br>
 
-    -  ### Registro Fallido.
+    -  ### :x: Registro Fallido.
      Si tu registro fallo, el servidor te regresara un mensaje con esta forma
 
     <br>
@@ -145,21 +143,21 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 
 <br>
 
-## Login 
+##  :unlock: Login 
 
 <br>
 
  Si ya tienes una cuenta, los tokens tienen un tiempo de expiracion de un dia, asi que deberas inicar sesion constantemente, recuerda que esta medida es con fines de seguidada.
 
-- ### **Peticion.** 
+- ### :globe_with_meridians: **Peticion.** 
 
-    -   ### EndPoint.
+    -   ### :link: EndPoint.
          Para inicar session y renovar tu token deberas hacer una peticion `POST` al siguiente ENDPOINT:
 
         ```http
         /api/auth/signIn
         ```
-    -   ### Objeto.
+    -   ### :white_small_square: Objeto.
         
          con un objeto con la siguiente estructura: 
          ```json
@@ -168,15 +166,15 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
                     "password":"password",
                 }
          ``` 
-         ### Detalle de los argumentos 
+         ### :page_facing_up: Detalle de los argumentos 
         | Nombre | Tipo   | Descripción |
         |:-----  |:--------:|:------|
         | email     | `String` | El correo del usuario |
         | password  | `String` | La contraseña del usuario|
 
 
-- ### **Resultado.**
-    -  ### Login Exitoso.
+- ###  :key: **Resultado.**
+    -  ### :white_check_mark: Login Exitoso.
         Si tu login fue exito, el servidor te regresara un token con esta forma
 
     <br>
@@ -189,7 +187,7 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 
     <br>
 
-    -  ### Login Fallido.
+    -  ### :x: Login Fallido.
         Si tu login fallo, el servidor te regresara un mensaje con esta forma
 
     <br>
@@ -210,5 +208,8 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 <div align="center">
 
 Diseñado con ♥️ en [SerVivo Digital](https://Servivo.digital)
-<div>
 
+
+:octocat:
+<div>
+ 
