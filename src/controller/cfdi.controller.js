@@ -1,4 +1,4 @@
-export const createCfdi = (req, res) => {};
+export const createCfdi = (req, res) => {res.json("Creando los cfdis");};
 export const getCfdis = (req, res) => {
   res.json("Obteniendo los cfdis");
 };
