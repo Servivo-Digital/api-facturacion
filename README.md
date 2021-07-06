@@ -52,8 +52,11 @@ Api-facturacion es de su uso interno.Debido a esto, pedimos a todos los desarrol
 </div>
 
 
-## **Autenticación.**
+## :unlock: **Autenticación.**
 
+En esta seccion conoceras los metodos y formas de identificarte ante la api, es e suma importancia para la conservacion y resguardo de la informacion manipulada en este servicio.
+
+<br><br>
 
 ## :closed_lock_with_key: SignUp 
 
