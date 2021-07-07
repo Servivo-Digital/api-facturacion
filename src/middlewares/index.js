@@ -1,6 +1,8 @@
-import {verifytoken} from './authJwt'
+import {verifytoken,isModerator,isAdmin} from './authJwt'
 
 
 export {
-    verifytoken
+    verifytoken,
+    isModerator,
+    isAdmin,
 }

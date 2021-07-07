@@ -18,7 +18,8 @@
 
  <div align="center">
 
-######  Consejo rápido:‎‎ Utilice la función "buscar en la página" de su navegador para buscar tipos de recursos específicos ( o ).‎ `Ctrl+F `   `Cmd+F`
+######  Consejo rápido:‎‎ Utilice la función "buscar en la página" de su navegador para buscar tipos de recursos específicos ( o ).‎ 
+`Ctrl+F `   `Cmd+F`
 ‎</div>
 
 <br>
