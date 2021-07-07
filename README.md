@@ -187,7 +187,24 @@ Para comenzar a interactura con la api debemos verificar tu identidad,deberas cr
 
     ```json
     {
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTRhMmU4ZTA0NTllNDFhMDFjZWM2NyIsImlhdCI6MTYyNTU5NjY0OCwiZXhwIjoxNjI1NjgzMDQ4fQ.56-59Wenzd471-Be32f6MAXzjiMXbvMToq0cFFJhL-0"
+        "User": [
+            {
+                "id": "60e3b97808dsdc802ed4f54ebd",
+                "username": "UsuarioPruena",
+                "email": "example@mail.com",
+                "roles": [
+                    {
+                        "_id": "0e38fa5eee97a02907bc40e",
+                        "name": "admin"
+                    },
+                    {
+                        "_id": "0e38fa5eee97a02907bc40d",
+                        "name": "moderator"
+                    }
+                ],
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZTNiOTc4MDg1YzgwMmVkNGY1NGViZCIsImlhdCI6MTYyNTYyxXI2MiwiZXhwIjoxNjI1NzA3NjYyfQ.LJMR-rREzKkN2IHwZhxWoXxMCy-9dqFz9Srl8qK0azk"
+            }
+        ]
     }
     ``` 
 
